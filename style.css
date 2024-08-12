@@ -451,6 +451,20 @@ a{
     margin-left: 130px;
     margin-top: 100px;
   }
+ #more{
+  background-color: #eee8e8;
+  width: 200px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #928d8d;
+  font-weight: bold;
+  font-size: large;
+  margin: 30px;
+  margin-left: 130px;
+  margin-top: 100px;
+ }
 }
 
   /* statistics */
@@ -539,17 +553,24 @@ footer {
   text-align: center;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* border-bottom: 1px solid #E2E8F0; */
+  border: 3px solid #000000;
+  border-radius: 30px;
+  margin: 30px auto;
 }
 
 .footer-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
+
+.footer-img{
+  height: 300px;
+  width: 300px;
+}
 .footer-section {
   flex-basis: 30%;
   margin-bottom: 40px;
@@ -577,6 +598,10 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
+  background-color: #0056b3;
+  height: 20vh;
+  border-top-left-radius: 30%;
+ border-bottom-right-radius:30% ;
 }
 
 .row{
@@ -665,9 +690,10 @@ footer {
 }
 
 .about-img5{
-  width: 100%;
-  height: auto;
-  margin-left: -1px;
+  width: 100% !important; 
+  height: auto !important;
+  margin-left: -1px !important;
+  overflow: hidden !important;
 }
 
 @media (max-width: 768px) {
@@ -704,7 +730,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: 80%;
+  height: 100vh;
 }
 
 .herolab-text{
@@ -735,7 +761,7 @@ footer {
   }
   .vid .vido{
     position: relative;
-    top: 50%;
+    /* top: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -864,52 +890,90 @@ h3 span {
 
 
 
-.other-one{
+.other-one {
   justify-content: center;
   align-content: center;
   display: flex;
   position: relative;
 }
 
-
-.service{
-  flex-direction: row;
+.service {
   display: flex;
+  flex-direction: row;
   gap: 150px;
   margin: 100px;
   justify-content: center;
   align-content: center;
-
 }
 
-.events , img{
+.events, 
+img {
   width: 100px;
   height: 100px;
-  margin-left: 100px;
 }
 
-.event-text{
-  text-wrap:nowrap;
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-text {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  font-size: 15px;
 }
 
 @media (max-width: 768px) {
   .other-one {
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    position: relative;
     flex-direction: column;
-  }
-  .service{
-    flex-direction: column;
-    display: flex;
+    justify-content: center; /* Ensure items are centered */
+    align-items: center; /* Center items vertically */
   }
 
-  
-.events {
-  margin-left: -50px !important;
+  .service {
+    flex-direction: column;
+    margin: 50px 20px; /* Adjust margin for smaller screens */
+    gap: 50px; /* Adjust gap for smaller screens */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+
+  .events {
+    margin-left: 0; /* Reset margin to align properly on smaller screens */
+    align-items: center; /* Center the content within the .events */
+    justify-content: center; /* Ensure content is centered */
+  }
+
+  .event-text {
+    flex-direction: column; /* Stack text vertically */
+    gap: 20px; /* Adjust gap for readability on smaller screens */
+    font-size: 14px; /* Slightly smaller text for mobile */
+    text-align: center; /* Center text */
+    justify-content: center; /* Center text within the flex container */
+  }
+
+  .more {
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0; /* Align properly on smaller screens */
+    padding: 10px 20px; /* Add padding for better touch interaction */
+    align-self: center; /* Ensure button is centered */
+  }
+
+  #event-text {
+    margin-left: 0; /* Align text properly on smaller screens */
+    text-align: center; /* Center the text */
+  }
 }
-}
+
+
 
 
 
@@ -1160,7 +1224,6 @@ form {
   transition: all 0.3s;
   pointer-events: none;
   font-size: 1rem;
-  background: #fff;
   padding: 0 4px;
 }
 
