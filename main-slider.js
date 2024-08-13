@@ -52,6 +52,6 @@ window.addEventListener('resize', () => {
     showSlide(currentSlide);
 });
 
-// Start the slider on page load
+
 showSlide(currentSlide);
 startAutoSlide();
