@@ -5,50 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Aerolab is a drone show and Technology company that specializes in creating stunning aerial displays for events and
   entertainment">
- <title>Aerolab - Drone Show and Technology Company</title>
- <link rel="icon" type="image/x-icon" href="pics/Aerolab.png">
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Aerolab - Drone Show and Technology Company</title>
+  <link rel="icon" type="image/x-icon" href="pics/Aerolab.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryColor: '#1EABE2',
+            // secondaryColor: ,
+          }
+        }
+      }
+    }
+  </script>
 </head>
-  <body>
-    <header class="nav-bar">
-      <div class="container">
-     
-          <nav class="navbar">
-              <!-- Corrected img tag -->
-              <img src="pics/Aerolab.png" alt="company logo" class="aero-logo">
-              
-              <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a> </li>
-                <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
-              </ul>
-              
-              <div class="hamburger">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </div>
-          </nav>
+
+<body>
+
+  <header>
+
+    <!-- navigation elements -->
+    <nav>
+
+      <!-- scroll progress -->
+      <div class="scroll-progress bg-primaryColor h-[3px] w-full fixed z-[1000] top-0"></div>
+
+      <div class="flex flex-row items-center justify-between h-[60px] px-5 z-[500] fixed top-0 left-0 right-0 h-[60px] bg-[#FFFFFF] opacity-95">
+
+        <!-- nav brand -->
+        <span>
+          <img src="https://aerolabgh.com/assets/Aerolab.png" class="w-[60px]" alt="brand-image" srcset="">
+        </span>
+
+        <!-- nav links -->
+        <ul class="flex flex-row md:items-center gap-5 hidden md:flex">
+
+          <li>
+              <a href="index.html" class="text-primaryColor cursor-pointer">
+                Home
+              </a>
+          </li>
+
+          <li>
+              <a href="about-us.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+                About Us
+              </a>
+          </li>
+
+          <li>
+              <a href="service.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+                Services
+              </a>
+          </li>
+
+          <li>
+              <a href="gallery.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+                Gallery
+              </a>
+          </li>
+          
+          <li>
+              <a href="contact-us.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+                Contact Us
+              </a>
+          </li>
+
+        </ul>
+
+        <span class="material-symbols-rounded md:hidden cursor-pointer" id="toggleNavIcon">
+          menu
+        </span>
+
       </div>
+
+    </nav>
+
+    <!-- small screens nav -->
+    <div class="sm-navbar bg-[#FFFFFF] shadow-lg md:hidden z-[500]">
+
+      <!-- sm nav links -->
+      <ul class="p-5 flex flex-col gap-5">
+        <li>
+          <a href="index.html" class="text-primaryColor cursor-pointer">
+            Home
+          </a>
+        </li>
+        <li>
+            <a href="about-us.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+              About Us
+            </a>
+        </li>
+        <li>
+            <a href="service.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+              Services
+            </a>
+        </li>
+        <li>
+            <a href="gallery.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+              Gallery
+            </a>
+        </li>
+
+        <li>
+          <a href="contact-us.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
+            Contact Us
+          </a>
+        </li>
+        
+        <div id="exit-nav"></div>
+      </ul>
+
+    </div>
+
   </header>
   
-   
-                  <!-- sildeshow -->
-     <section class="mainsection" id="home">
-        <video autoplay muted loop>
-        <source type="video/mp4" src="https://www.upshot.photos/wp-content/uploads/2024/06/Showreel-2024-Smaller.mp4">    
-              
-     </section>  
+    <!-- sildeshow -->
+    <section class="mt-[60px]" id="home">
+      <video autoplay muted loop>
+      <source type="video/mp4" src="https://www.upshot.photos/wp-content/uploads/2024/06/Showreel-2024-Smaller.mp4" class="w-full">
+    </section>
      
-     <div class="hero-section">
-      <h1 class="headline">Captivating Audiences with Stunning Drone Light Shows</h1>
-      <p class="subtext">
-          Aerolabgh Shows is the leading drone light show provider in the United States. Our experienced team has brought the art of drone light shows all across the country for community events, sports teams, businesses, artists, and major brands. Drone light shows and aerial performances are redefining the future of entertainment on an immense scale. Whether you're hosting an event, promoting a launch, or building brand awareness, our US-based team is here to take your moment to the sky and beyond.
+    <section class="md:mx-[150px] mt-[50px] md:mt-[100px] p-5">
+      <h1 class="font-bold text-2xl">Captivating Audiences with Stunning Drone Light Shows</h1>
+      <p class="">
+        Aerolabgh Shows is the leading drone light show provider in the United States. Our experienced team has brought the art of drone light shows all across the country for community events, sports teams, businesses, artists, and major brands. Drone light shows and aerial performances are redefining the future of entertainment on an immense scale. Whether you're hosting an event, promoting a launch, or building brand awareness, our US-based team is here to take your moment to the sky and beyond.
       </p>
-  </div>
+    </section>
   
       <!-- Breifly -->
 
@@ -177,6 +264,7 @@
         <p class="end">© 2023 Aerolabgh - Drone Show Company</p>
       </footer>
 
-      <script src="main-slider.js"></script>
-  </body>
+  <script src="main-slider.js"></script>
+  <script src="script/app.js"></script>
+</body>
 </html>

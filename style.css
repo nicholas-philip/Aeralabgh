@@ -1,207 +1,92 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;  
-  color: #505050;
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shippori+Antique+B1&display=swap');
+
+html{
+    scroll-behavior: smooth;
 }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.subHeading {
+    font-family: "Shippori Antique B1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+scroll-progress{
+  animation: scroll-progress linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-progress {
+  from {
+      width: 0px;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+.sm-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100dvh;
+  transition: all ease-in-out 0.4s;
+  width: 0;
+}
+
+.sm-navbar ul{
+  overflow: hidden;
+  visibility: hidden;
+  white-space: nowrap;
+  transition: all ease-in-out 0.2s;
+}
+
+#exit-nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100dvh;
+  cursor: pointer;
+  width: 20%;
+}
+
 
 
  /* home section */
-header{
-  position: fixed;
-  background-color: rgb(0, 0, 0);
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  height:auto;
-  justify-content: space-between;
-  overflow: hidden;
-}
-.aero-logo img{
- width: 250px;
- height: 500px;
- left: 50%;
-}
-li{
-  list-style: none;
-}
-
-a{
-  color: white;
-  text-decoration: none;
-}
-
-.container{
-  max-width: 1224px;
-  width: 95%;
-  margin: auto;
-  justify-content: space-between;
-}
-
-.navbar{
-  min-height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width:100%;
-}
-
-.aero{
-  margin-right: 100px;
-}
-
-
-.nav-menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-  font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  z-index: 1;
- 
-}
-
-.nav-link{
-  transition: 0.3s ease-out;
-}
-
-.nav-link:hover{
-  color: rgb(251, 255, 30);
-}
-
-.hamburger{
-  display: none;
-  cursor: pointer;
-}
-
-.bar{
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: white;
-}
-
-.nav-item{
-  height: 40px;
-  width: 100px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-  border: solid 1px rgb(255, 255, 255);
-}
-.aero-logo {
-  margin-left:-230px; /* Adjust the value as needed */
-  width: 150px; /* Adjust width as per design */
-  height:50px; /* Maintain aspect ratio */
-}
-/* Media query for mobile responsiveness */
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
-
-  header {
-    height: 50px; /* Adjust based on content */
-    display: flex;
-    justify-content: space-between; /* Ensure space between elements */
-    align-items: center;
-    padding: 10px; /* Add padding for spacing */
-    justify-content: center;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    align-items: center;
-    transition: right 0.3s ease-in-out;
-    display: flex;
-    padding-top: 100px; /* Push the menu items down a bit to avoid overlap with the header */
-    gap: 20px;
-    z-index: 1000;
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .hamburger {
-    display: block;
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    z-index: 1001;
-  }
-  
-  .navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-     overflow: hidden;
-  }
-
-  .aero-logo {
-    margin-left: 200px; /* Align logo to the left */
-    width: 150px; /* Adjust logo size for mobile */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .nav-item {
-    width: 80%;
-    height: auto;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    border: solid 1px rgb(255, 255, 255);
-    padding: 10px; /* Add padding for better tap targets on mobile */
-    font-size: 1.2em; /* Increase font size for better readability */
-    text-align: center;
-  }
-
-  .nav-link {
-    font-size: 1.1em; /* Adjust font size for mobile */
-    width: 100%; /* Make sure links take full width */
-  }
-  .aero-logo {
-    margin-left: -220px; /* Adjust the value as needed */
-    width: 150px; /* Adjust width as per design */
-    height: auto; /* Maintain aspect ratio */
-    display: none;
-  }
-}
 
 
 
 /* silder */
 
-.mainsection{
-  top: 12%;
-  width: 100%;
-}
-
-.mainsection video{
+/* .mainsection video{
   width: 100%;
  
-}
+} */
 
 
-.mainsection .herolabel{
+/* .mainsection .herolabel{
   position: relative;
   top: 80%;
   left: 50%;
@@ -209,7 +94,7 @@ a{
   z-index: 1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   justify-content: center;
-}
+} */
 
 .mainsection .herolabel h1{
   margin: 0;
@@ -249,39 +134,6 @@ a{
   color: rgb(7, 7, 7);
 }
 
-.hero-section {
-  text-align: center;
-  color: #fff;
-  padding: 50px 20px;
-  font-family: Arial, sans-serif;
-}
-
-.headline {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.subtext {
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  font-weight: 700;
-}
-
-
-@media   (max-width: 768px){
-  .mainsection{
-    width: 100%;
-  }
-  
-.mainsection video{
-  width: 100%;
-  height: 50vh;
-} 
-
-}
 
 /* briefly */
 /* Default styles (for larger screens) */
