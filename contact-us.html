@@ -10,6 +10,7 @@
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
  <script src="https://smtpjs.com/v3/smtp.js"></script>
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
   <body>
     <header class="nav-bar">
@@ -212,7 +213,15 @@
               <!-- <hr> -->
               <p class="end">© 2023 Aerolabgh - Drone Show Company</p>
             </footer>
-   
-      <script src="main.js"></script>
+            <script>
+              const faqs = document.querySelectorAll('.faq'); 
+              faqs.forEach(faq => {
+                  faq.addEventListener('click', () => { // 
+                      faq.classList.toggle('active');
+                  });
+              });
+            </script>
+            
+      <script src="main-slider.js"></script>
   </body>
 </html>

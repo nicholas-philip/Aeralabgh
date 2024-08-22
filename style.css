@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;  
-  color: #000000;
+  color: #505050;
 }
 
 
@@ -483,8 +483,8 @@ a{
 
 /* Default footer styles (for larger screens) */
 footer {
-  background-color: #ffffff;
-  color: #fff;
+  background-color:#0F233C;
+  color: #fff !important;
   font-size: 14px;
   padding: 50px 0;
   text-align: center;
@@ -494,6 +494,7 @@ footer {
   border-radius: 30px;
   margin: 30px auto;
   justify-content: center;
+
 }
 
 .footer-wrapper {
@@ -556,6 +557,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white !important;
   }
 
   .footer-wrapper {
