@@ -35,7 +35,7 @@
       <!-- scroll progress -->
       <div class="scroll-progress bg-primaryColor h-[3px] w-full fixed z-[1000] top-0"></div>
 
-      <div class="flex flex-row items-center justify-between h-[60px] px-5 z-[500] fixed top-0 left-0 right-0 h-[60px] bg-[#FFFFFF] opacity-95">
+      <div class="flex flex-row items-center justify-between h-[60px] px-10 z-[500] fixed top-0 left-0 right-0 h-[60px] bg-[#111] opacity-95">
 
         <!-- nav brand -->
         <span>
@@ -43,6 +43,102 @@
         </span>
 
         <!-- nav links -->
+        <ul class="flex flex-row md:items-center gap-5 hidden md:flex">
+
+          <li>
+              <a href="index.html" class="text-primaryColor cursor-pointer">
+                Home
+              </a>
+          </li>
+
+          <li>
+              <a href="about-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+                About Us
+              </a>
+          </li>
+
+          <li>
+              <a href="service.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+                Services
+              </a>
+          </li>
+
+          <li>
+              <a href="gallery.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+                Gallery
+              </a>
+          </li>
+          
+          <li>
+              <a href="contact-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+                Contact Us
+              </a>
+          </li>
+
+        </ul>
+
+        <span class="material-symbols-rounded md:hidden cursor-pointer" id="toggleNavIcon">
+          menu
+        </span>
+
+      </div>
+
+    </nav>
+
+    <!-- small screens nav -->
+    <div class="sm-navbar bg-[#111] shadow-lg md:hidden z-[500]">
+
+      <!-- sm nav links -->
+      <ul class="p-5 flex flex-col gap-5">
+        <li>
+          <a href="index.html" class="text-primaryColor cursor-pointer">
+            Home
+          </a>
+        </li>
+        <li>
+            <a href="about-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+              About Us
+            </a>
+        </li>
+        <li>
+            <a href="service.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+              Services
+            </a>
+        </li>
+        <li>
+            <a href="gallery.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+              Gallery
+            </a>
+        </li>
+
+        <li>
+          <a href="contact-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+            Contact Us
+          </a>
+        </li>
+        
+        <div id="exit-nav"></div>
+      </ul>
+
+    </div>
+
+  </header>
+  <!-- <header>
+
+    navigation elements
+    <nav>
+
+      scroll progress
+      <div class="scroll-progress bg-primaryColor h-[3px] w-full fixed z-[1000] top-0"></div>
+
+      <div class="flex flex-row items-center justify-between h-[60px] px-10 z-[500] fixed top-5 left-5 right-5 h-[60px] bg-[#FFFFFF] opacity-95">
+
+        nav brand
+        <span>
+          <img src="https://aerolabgh.com/assets/Aerolab.png" class="w-[60px]" alt="brand-image" srcset="">
+        </span>
+
+        nav links
         <ul class="flex flex-row md:items-center gap-5 hidden md:flex">
 
           <li>
@@ -85,10 +181,10 @@
 
     </nav>
 
-    <!-- small screens nav -->
+    small screens nav
     <div class="sm-navbar bg-[#FFFFFF] shadow-lg md:hidden z-[500]">
 
-      <!-- sm nav links -->
+      sm nav links
       <ul class="p-5 flex flex-col gap-5">
         <li>
           <a href="index.html" class="text-primaryColor cursor-pointer">
@@ -122,147 +218,153 @@
 
     </div>
 
-  </header>
-  
+  </header> -->
+
+  <main>
+
     <!-- sildeshow -->
     <section class="mt-[60px]" id="home">
-      <video autoplay muted loop>
-      <source type="video/mp4" src="https://www.upshot.photos/wp-content/uploads/2024/06/Showreel-2024-Smaller.mp4" class="w-full">
+      <video autoplay muted loop class="w-[100%]">
+      <source type="video/mp4" src="https://aerolabgh.com/assets/loop.mp4">
+      <!-- <source type="video/mp4" src="https://www.upshot.photos/wp-content/uploads/2024/06/Showreel-2024-Smaller.mp4"> -->
     </section>
-     
-    <section class="md:mx-[150px] mt-[50px] md:mt-[100px] p-5">
-      <h1 class="font-bold text-2xl">Captivating Audiences with Stunning Drone Light Shows</h1>
+  
+    <!-- Captivating Audiences -->
+    <section class="md:mx-[50px] lg:mx-[100px] mt-[50px] md:mt-[70px] p-5">
+      <h1 class="font-bold text-3xl md:text-4xl mb-5">Captivating Audiences with Stunning Drone Light Shows</h1>
       <p class="">
         Aerolabgh Shows is the leading drone light show provider in the United States. Our experienced team has brought the art of drone light shows all across the country for community events, sports teams, businesses, artists, and major brands. Drone light shows and aerial performances are redefining the future of entertainment on an immense scale. Whether you're hosting an event, promoting a launch, or building brand awareness, our US-based team is here to take your moment to the sky and beyond.
       </p>
     </section>
   
-      <!-- Breifly -->
-
-      <section id="carder">
-        <h1 class="card-head">Breifly On What We Do</h1>
-        <div  class="cards">
-          <div class="card-1">
-            <img src="pics/drone4.jpg"   alt="" class="card-img" height="300px" width="300px" >
-            <p class="card-text">
-              <span class="sub-head">We Provide Stunning Drone Light Shows</span> <br>
-              <span class="card-text1">
-                We deliver mesmerizing drone light shows, perfect for any event. Our expert team customizes each display, adding a unique, unforgettable touch. Experience the brilliance of drone technology, made in Africa. <a href="service.html" style="color: rgb(28, 42, 241); font-weight:200;">learn more</a>
-              </span>
-            </p>
-           </div>
-
-           <div class="card-1">
-            <img src="pics/gettyimages-1092018162-612x612.jpg "   alt="" class="card-img" height="300px" width="300px" >
-            <p class="card-text">
-              <span class="sub-head">Advertising drone displays</span> <br>
-              <span class="card-text1">
-                Illuminate the African sky with our captivating drone displays. Perfect for brand activations, product launches, and events, our drone ads make your message unforgettable. Take your advertising to new heights across Africa. <a href="service.html" style="color: rgb(28, 42, 241);  font-weight:200;">learn more</a>
-              </span>
-            </p>
-           </div>
-
-
-           <div class="card-1">
-            <img src="pics/drone-entertainment.jpg" alt="" class="card-img" height="300px" width="300px" >
-            <p class="card-text">
-              <span class="sub-head">Entertainment drone shows</span> <br>
-          <span class="card-text1">
-            Light up the night with our stunning entertainment drone shows. Perfect for festivals, concerts, and special events across Africa, our drones create mesmerizing displays that captivate and entertain. Make your event unforgettable with a breathtaking aerial spectacle. <a href="service.html" style="color: rgb(28, 42, 241); font-weight:200;">learn more</a>
-          </span>
-            </p>
-           </div>
+    <!-- Breifly -->
+    <section class="md:mx-[50px] lg:mx-[100px] mt-[50px] md:mt-[70px] p-5">
+      <h1 class="font-bold text-3xl md:text-4xl mb-5">Breifly On What We Do</h1>
+      <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="border rounded-2xl hover:shadow-lg ease-in-out duration-300">
+          <img src="pics/drone4.jpg" alt="drone4.jpg" class="w-[100%] h-[200px] rounded-t-2xl">
+          <p class="p-5">
+            <span class="font-bold">We Provide Stunning Drone Light Shows</span> <br>
+            <span class="card-text1">
+              We deliver mesmerizing drone light shows, perfect for any event. Our expert team customizes each display, adding a unique, unforgettable touch. Experience the brilliance of drone technology, made in Africa.
+              <a href="service.html" class="block text-primaryColor mt-2">Learn more</a>
+            </span>
+          </p>
         </div>
-        <div class="more" id="more">
-          <a href="service.html">Read more</a>
+  
+        <div class="border rounded-2xl hover:shadow-lg ease-in-out duration-300">
+          <img src="pics/gettyimages-1092018162-612x612.jpg " alt="" class="w-[100%] h-[200px] rounded-t-2xl">
+          <p class="p-5">
+            <span class="font-bold">Advertising drone displays</span><br>
+            <span class="card-text1">
+              Illuminate the African sky with our captivating drone displays. Perfect for brand activations, product launches, and events, our drone ads make your message unforgettable. Take your advertising to new heights across Africa.
+              <a href="service.html" class="block text-primaryColor mt-2">Learn more</a>
+            </span>
+          </p>
         </div>
-      </section>
-
-          <!-- statistics -->
-      <section>
-        <div class="statistics-container">
-        <div class="flex-1">
-          <div class="stat-box">
-            <h2>14</h2>
-            <p style="margin-left: 50px;">Years UAV Experience</p>
-            <img src="pics/Screenshot 2024-08-09 205022 plane.png" alt="UAV Experience Icon">
-            <hr class="lines" width="500px" style="margin-left: 300px; margin-top: 30px;">
+  
+        <div class="border rounded-2xl hover:shadow-lg ease-in-out duration-300">
+          <img src="pics/drone-entertainment.jpg" alt="" class="w-[100%] h-[200px] rounded-t-2xl">
+          <p class="p-5">
+            <span class="font-bold">Entertainment drone shows</span><br>
+            <span class="card-text1">
+            Light up the night with our stunning entertainment drone shows. Perfect for festivals, concerts, and special events across Africa, our drones create mesmerizing displays that captivate and entertain. Make your event unforgettable with a breathtaking aerial spectacle. 
+            <a href="service.html" class="block text-primaryColor mt-2">Learn more</a>
+            </span>
+          </p>
         </div>
-        <div class="stat-box">
-            <h2>700+</h2>
-            <p>Employees</p>
-            <img src="pics/globe.png" alt="Employees Icon">
-            <hr class="lines" width="500px" style="margin-left: 300px; margin-top: 30px;">
-        </div>
-        </div>
-          <div class="flex-2">
-            <div class="stat-box">
-              <h2>40</h2>
-              <p style="margin-left: 90px;">Countries Using Aerolabgh</p>
-              <img src="pics/people .png" alt="Countries Icon">
-              <hr class="lines" width="500px" style="margin-left: 300px; margin-top: 30px;">
-          </div>
-          <div class="stat-box">
-              <h2 style="margin-left: 80px;">500,000</h2>
-              <p style="margin-left: 80px;">Cumulative Flying Time</p>
-              <img src="pics/Screenshot 2024-08-09 210621.png" alt="Flying Time Icon">
-              <hr class="lines" width="500px" style="margin-left: 300px; margin-top: 30px;">
-          </div>
-          </div>
+  
       </div>
-      </section>
-
-    
-
-
-      <footer>
-        <div class="footer-wrapper">
-          <div class="footer-section">
-            <!-- <h3 >About Us</h3> -->
-            <a href="#home"><img src="pics/Aerolab.png" alt="logo" width="200px" height="200px" class="footer-img"></a>
+      
+    </section>
+  
+    <!-- statistics -->
+    <section class="md:mx-[50px] lg:mx-[100px] mt-[50px] md:mt-[70px] p-5">
+      
+      <div class="flex flex-row justify-center gap-5">
+  
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div class="flex flex-col items-center justify-center">
+            <img src="icons/icons8-calendar-96.png" class="w-[100px]" alt="UAV Experience Icon">
+            <h2 class="font-bold text-6xl">14</h2>
+            <p class="text-lg">Years UAV Experience</p>
           </div>
-          <div class="footer-section">
-            <h3>Follow Us</h3>
-            <div class="row">
-              <div class="column">
-                <a href=""><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
-                </svg>
-                </a>
-              </div>
-              <div class="column">
-                <a href="https://twitter.com/Aerolabgh"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z" clip-rule="evenodd"/>
-                </svg>
-                </a>
-              </div>
-              <div class="column">
-                <a href=""><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
-                  <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
-                </svg>
-                </a>
-              </div>
-              <div class="column">
-                <a href=""></a><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clip-rule="evenodd"/>
-                </svg>
-                
-              </div>
-            </div>
+        
+          <div class="flex flex-col items-center justify-center">
+            <img src="icons/icons8-employees-100.png" class="w-[100px]" alt="Employees Icon">
+            <h2 class="font-bold text-6xl">700+</h2>
+            <p class="text-lg">Employees</p>
           </div>
-          <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>13 Main Street,Madina</p>
-            <p>Accra, Ghana</p><br>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> info@aerolabgh.com</p><br>
-            <p><i class="fa fa-phone-square" aria-hidden="true"></i> (233)206807185,545173650</p>
+        
+          <div class="flex flex-col items-center justify-center">
+            <img src="icons/icons8-world-96.png" class="w-[100px]" alt="Countries Icon">
+            <h2 class="font-bold text-6xl">40</h2>
+            <p class="text-lg">Countries Using Aerolabgh</p>
           </div>
-          
+        
+          <div class="flex flex-col items-center justify-center">
+            <img src="icons/icons8-time-96.png" class="w-[100px]" alt="Flying Time Icon">
+            <h2 class="font-bold text-6xl">500,000</h2>
+            <p class="text-lg">Cumulative Flying Time</p>
+          </div>
         </div>
-        <!-- <hr> -->
-        <p class="end">© 2023 Aerolabgh - Drone Show Company</p>
-      </footer>
+
+      </div>
+  
+    </section>
+
+  </main>
+  
+  <footer class="mt-[50px] md:mt-[70px] p-10 bg-[#0F233C]">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="">
+        <!-- <h3 >About Us</h3> -->
+        <a href="#home"><img src="pics/Aerolab.png" alt="logo" class="w-[150px] h-[150px]"></a>
+      </div>
+      <div class="">
+        <h3>Follow Us</h3>
+        <div class="flex flex-row items-center gap-5">
+          <div class="">
+            <a href="">
+              <img src="./icons/icons8-instagram-logo-96.png" class="w-[60px] h-[60px]" alt="" srcset="">
+            </a>
+          </div>
+          <div class="">
+            <a href="https://twitter.com/Aerolabgh">
+              <img src="./icons/icons8-twitter-logo-96.png" class="w-[60px] h-[60px]" alt="" srcset="">
+            </a>
+          </div>
+          <div class="">
+            <a href="">
+              <img src="./icons/icons8-linkedin-logo-96.png" class="w-[60px] h-[60px]" alt="" srcset="">
+            </a>
+          </div>
+          <div class="">
+            <a href="">
+              <img src="./icons/icons8-youtube-logo-96.png" class="w-[60px] h-[60px]" alt="" srcset="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>13 Main Street,Madina</p>
+        <p>Accra, Ghana</p><br>
+        <span class="flex flex-row items-center gap-3">
+          <span class="material-symbols-rounded">mail</span>
+          <p>info@aerolabgh.com</p>
+        </span><br>
+        <span class="flex flex-row items-center gap-3">
+          <span class="material-symbols-rounded">phone</span>
+          <p class="heading">+233 (20) 680 7185 | 545173650</p>
+        </span>
+      </div>
+      
+    </div>
+    <!-- <hr> -->
+    <p class="text-center pt-10 pb-5">© 2023 Aerolabgh - Drone Show Company</p>
+  </footer>
 
   <script src="main-slider.js"></script>
   <script src="script/app.js"></script>
