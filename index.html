@@ -25,7 +25,7 @@
   </script>
 </head>
 
-<body>
+<body class="light-theme">
 
   <header>
 
@@ -35,7 +35,7 @@
       <!-- scroll progress -->
       <div class="scroll-progress bg-primaryColor h-[3px] w-full fixed z-[1000] top-0"></div>
 
-      <div class="flex flex-row items-center justify-between h-[60px] px-10 z-[500] fixed top-0 left-0 right-0 h-[60px] bg-[#111] opacity-95">
+      <div id="nav" class="flex light-theme flex-row items-center justify-between h-[60px] px-10 z-[500] fixed top-0 left-0 right-0 opacity-95">
 
         <!-- nav brand -->
         <span>
@@ -52,30 +52,34 @@
           </li>
 
           <li>
-              <a href="about-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+              <a href="about-us.html" class="hover:text-secondaryColor cursor-pointer">
                 About Us
               </a>
           </li>
 
           <li>
-              <a href="service.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+              <a href="service.html" class="hover:text-secondaryColor cursor-pointer">
                 Services
               </a>
           </li>
 
           <li>
-              <a href="gallery.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
-                Gallery
-              </a>
+            <a href="gallery.html" class="hover:text-secondaryColor cursor-pointer">
+              Gallery
+            </a>
           </li>
           
           <li>
-              <a href="contact-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
-                Contact Us
-              </a>
+            <a href="contact-us.html" class="hover:text-secondaryColor cursor-pointer">
+              Contact Us
+            </a>
           </li>
 
         </ul>
+
+        <span class="material-symbols-rounded theme-btn cursor-pointer hidden md:flex">
+          light_mode
+        </span>
 
         <span class="material-symbols-rounded md:hidden cursor-pointer" id="toggleNavIcon">
           menu
@@ -86,7 +90,7 @@
     </nav>
 
     <!-- small screens nav -->
-    <div class="sm-navbar bg-[#111] shadow-lg md:hidden z-[500]">
+    <div id="sm-navbar" class="sm-navbar light-theme shadow-lg md:hidden z-[500]">
 
       <!-- sm nav links -->
       <ul class="p-5 flex flex-col gap-5">
@@ -96,26 +100,30 @@
           </a>
         </li>
         <li>
-            <a href="about-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+            <a href="about-us.html" class="hover:text-secondaryColor cursor-pointer">
               About Us
             </a>
         </li>
         <li>
-            <a href="service.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+            <a href="service.html" class="hover:text-secondaryColor cursor-pointer">
               Services
             </a>
         </li>
         <li>
-            <a href="gallery.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+            <a href="gallery.html" class="hover:text-secondaryColor cursor-pointer">
               Gallery
             </a>
         </li>
 
         <li>
-          <a href="contact-us.html" class="text-[#F2F2F2] hover:text-secondaryColor cursor-pointer">
+          <a href="contact-us.html" class="hover:text-secondaryColor cursor-pointer">
             Contact Us
           </a>
         </li>
+
+        <span class="material-symbols-rounded theme-btn cursor-pointer">
+          light_mode
+        </span>
         
         <div id="exit-nav"></div>
       </ul>
@@ -223,9 +231,14 @@
   <main>
 
     <!-- sildeshow -->
-    <section class="mt-[60px]" id="home">
-      <video autoplay muted loop class="w-[100%]">
-      <source type="video/mp4" src="https://aerolabgh.com/assets/loop.mp4">
+    <section class="flex flex-row items-center mt-[60px] justify-center" id="home">
+      <video autoplay muted loop class="w-[100%] relative">
+        <source type="video/mp4" src="https://aerolabgh.com/assets/loop.mp4">
+      </video>
+      <div class="absolute">
+        <p class="font-bold text-6xl">Drone light show made in Africa</p>
+        <p class="font-bold text-xl absolute">-We provide stunning drone light shows-</p>
+      </div>
       <!-- <source type="video/mp4" src="https://www.upshot.photos/wp-content/uploads/2024/06/Showreel-2024-Smaller.mp4"> -->
     </section>
   
@@ -323,7 +336,7 @@
         <a href="#home"><img src="pics/Aerolab.png" alt="logo" class="w-[150px] h-[150px]"></a>
       </div>
       <div class="">
-        <h3>Follow Us</h3>
+        <h3 class="text-[#FFFFFF] text-start pl-2">Follow Us</h3>
         <div class="flex flex-row items-center gap-5">
           <div class="">
             <a href="">
@@ -348,22 +361,22 @@
         </div>
       </div>
       <div>
-        <h3>Contact Us</h3>
-        <p>13 Main Street,Madina</p>
-        <p>Accra, Ghana</p><br>
+        <h3 class="text-[#FFFFFF] text-start">Contact Us</h3>
+        <p class="text-[#FFFFFF]">13 Main Street,Madina</p>
+        <p class="text-[#FFFFFF]">Accra, Ghana</p><br>
         <span class="flex flex-row items-center gap-3">
-          <span class="material-symbols-rounded">mail</span>
-          <p>info@aerolabgh.com</p>
+          <span class="material-symbols-rounded text-[#FFFFFF]">mail</span>
+          <p class="text-[#FFFFFF]">info@aerolabgh.com</p>
         </span><br>
         <span class="flex flex-row items-center gap-3">
-          <span class="material-symbols-rounded">phone</span>
-          <p class="heading">+233 (20) 680 7185 | 545173650</p>
+          <span class="material-symbols-rounded text-[#FFFFFF]">phone</span>
+          <p class="heading text-[#FFFFFF]">+233 (20) 680 7185 | +233 (54) 517 3650</p>
         </span>
       </div>
       
     </div>
     <!-- <hr> -->
-    <p class="text-center pt-10 pb-5">© 2023 Aerolabgh - Drone Show Company</p>
+    <p class="text-center pt-10 pb-5 text-[#FFFFFF]">© 2023 Aerolabgh - Drone Show Company</p>
   </footer>
 
   <script src="main-slider.js"></script>
